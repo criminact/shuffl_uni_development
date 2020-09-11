@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.addproduct.ProductAddFragment1">
+
+        <LinearLayout
+            android:id="@+id/toolbar_product_details"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="20dp"
+                android:text="Title"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/largeTextSize" />
+
+            <EditText
+                android:id="@+id/title_add"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="8dp"
+                android:hint="Lolita"
+                android:inputType="text"
+                android:paddingHorizontal="8dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorTextUnImportant"
+                android:textSize="@dimen/largeTextSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="20dp"
+                android:text="Book Description"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/largeTextSize" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="8dp"
+                android:gravity="start"
+                android:id="@+id/subtitle_add"
+                android:hint="By Vladimir Nabokov"
+                android:inputType="text"
+                android:paddingHorizontal="8dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorTextUnImportant"
+                android:textSize="@dimen/largeTextSize" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="32dp"
+                android:layout_marginTop="20dp"
+                android:text="Rental price (Day)"
+                android:textColor="@color/colorAccent"
+                android:textSize="@dimen/largeTextSize" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginHorizontal="32dp"
+                android:hint="200/Day"
+                android:id="@+id/price_add"
+                android:inputType="number"
+                android:paddingHorizontal="8dp"
+                android:textColor="@color/colorBlack"
+                android:textColorHint="@color/colorTextUnImportant"
+                android:textSize="@dimen/largeTextSize" />
+
+            <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+                android:id="@+id/upload_pictures"
+                android:layout_width="220dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginVertical="32dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Upload Pictures"
+                android:textColor="@color/colorWhite"
+                app:icon="@drawable/check_ic"
+                app:iconGravity="textEnd"
+                app:iconPadding="8dp"
+                app:iconTint="@color/colorWhite" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item android:id="@+id/my_products"
+            android:title="My Products"
+            android:icon="@drawable/my_products_ic"/>
+
+        <item android:id="@+id/products_rented"
+            android:title="Rented Products"
+            android:icon="@drawable/products_rented_ic"/>
+
+        <item android:id="@+id/payments"
+            android:title="Payments"
+            android:icon="@drawable/payments_ic"/>
+
+        <item android:id="@+id/verification"
+            android:title="Verification"
+            android:icon="@drawable/verification"/>
+
+        <item android:id="@+id/settings"
+            android:title="Settings"
+            android:icon="@drawable/settings"/>
+
+    </group>
+
+    <group>
+
+        <item android:id="@+id/rateus"
+            android:title="Rate Us"
+            android:icon="@drawable/rateus"/>
+
+        <item android:id="@+id/complaints"
+            android:title="Complaints"
+            android:icon="@drawable/complaints"/>
+
+        <item android:id="@+id/logout"
+            android:title="Log out"
+            android:icon="@drawable/logout"/>
+
+    </group>
+
+</menu>

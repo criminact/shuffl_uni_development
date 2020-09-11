@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.auth.AuthSuggestionFragment">
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/view_pager_login"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="100dp" />
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/page_indicator_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/view_pager_login"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/view_pager_login"
+            app:piv_animationType="thinWorm"
+            android:layout_marginTop="20dp"
+            app:piv_selectedColor="@color/colorAccent"
+            app:piv_unselectedColor="@color/colorTextUnImportant"
+            app:piv_viewPager="@id/view_pager_login"
+            app:piv_interactiveAnimation="true" />
+
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/login_button"
+            android:layout_width="160dp"
+            android:layout_height="42dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:gravity="center"
+            android:text="Login"
+            android:visibility="visible"
+            android:textColor="@color/colorWhite"
+            app:icon="@drawable/login_ic"
+            app:iconGravity="textEnd"
+            android:clickable="true"
+            app:iconPadding="8dp"
+            app:iconTint="@color/colorWhite"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="10dp"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

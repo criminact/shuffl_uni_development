@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".view.auth.SelectUniFragment">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/search_view_uni"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:paddingVertical="14dp"
+            app:closeIcon="@drawable/close_ic"
+            app:iconifiedByDefault="false"
+            app:queryBackground="@android:color/transparent"
+            app:queryHint="Search your University"
+            app:searchIcon="@drawable/search_ic" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/uni_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_view_uni"/>
+
+    </RelativeLayout>
+
+</layout>

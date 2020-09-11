@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "620315216621",
+    "firebase_url": "https://shuffl-7af75.firebaseio.com",
+    "project_id": "shuffl-7af75",
+    "storage_bucket": "shuffl-7af75.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:620315216621:android:88afada9cfd4e1bf7a1ae4",
+        "android_client_info": {
+          "package_name": "com.shuffl.niched"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "620315216621-gctpfhvcjleoba8ovtnoc69ml0j9db72.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAvmAK7XnffJynKyWETEUR9r3YeTnT0CsM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "620315216621-gctpfhvcjleoba8ovtnoc69ml0j9db72.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

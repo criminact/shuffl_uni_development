@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/auth_nav"
+    app:startDestination="@id/authSuggestionFragment">
+
+    <fragment
+        android:id="@+id/authFragment1"
+        android:name="com.shuffl.niched.view.auth.AuthFragment1">
+        <action
+            android:id="@+id/action_authFragment1_to_authFragment2"
+            app:destination="@id/authFragment2"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="user"
+            app:argType="com.shuffl.niched.model.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/authFragment2"
+        android:name="com.shuffl.niched.view.auth.AuthFragment2">
+        <action
+            android:id="@+id/action_authFragment2_to_authFragment1"
+            app:destination="@id/authFragment1"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_right"
+            app:popEnterAnim="@anim/slide_in_right"
+            app:popExitAnim="@anim/slide_out_right" />
+        <argument
+            android:name="user"
+            app:argType="com.shuffl.niched.model.User" />
+        <action
+            android:id="@+id/action_authFragment2_to_profileFragment"
+            app:destination="@id/profileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/moreDetailsFragment"
+        android:name="com.shuffl.niched.view.auth.MoreDetailsFragment"
+        android:label="MoreDetailsFragment" >
+        <action
+            android:id="@+id/action_moreDetailsFragment_to_selectUniFragment"
+            app:destination="@id/selectUniFragment" />
+        <argument
+            android:name="user"
+            app:argType="com.shuffl.niched.model.User" />
+        <action
+            android:id="@+id/action_moreDetailsFragment_to_authFragment1"
+            app:destination="@id/authFragment1" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectUniFragment"
+        android:name="com.shuffl.niched.view.auth.SelectUniFragment"
+        android:label="SelectUniFragment" >
+        <action
+            android:id="@+id/action_selectUniFragment_to_moreDetailsFragment"
+            app:destination="@id/moreDetailsFragment" />
+        <argument
+            android:name="user"
+            app:argType="com.shuffl.niched.model.User" />
+    </fragment>
+    <fragment
+        android:id="@+id/authSuggestionFragment"
+        android:name="com.shuffl.niched.view.auth.AuthSuggestionFragment"
+        android:label="AuthSuggestionFragment" >
+        <action
+            android:id="@+id/action_authSuggestionFragment_to_moreDetailsFragment"
+            app:destination="@id/moreDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.shuffl.niched.view.auth.ProfileFragment"
+        android:label="ProfileFragment" >
+        <argument
+            android:name="user"
+            app:argType="com.shuffl.niched.model.User" />
+    </fragment>
+</navigation>

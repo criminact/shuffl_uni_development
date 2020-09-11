@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_add_nav"
+    app:startDestination="@id/productAddFragment1">
+    <fragment
+        android:id="@+id/productAddFragment1"
+        android:name="com.shuffl.niched.view.addproduct.ProductAddFragment1"
+        android:label="Product Details" >
+        <action
+            android:id="@+id/action_productAddFragment1_to_productAddFragment2"
+            app:destination="@id/productAddFragment2"
+             />
+    </fragment>
+    <fragment
+        android:id="@+id/productAddFragment2"
+        android:name="com.shuffl.niched.view.addproduct.ProductAddFragment2"
+        android:label="Product Photos"
+        tools:layout="@layout/fragment_product_add2" >
+        <action
+            android:id="@+id/action_productAddFragment2_to_productAddFragment1"
+            app:destination="@id/productAddFragment1"
+            />
+        <argument
+            android:name="product"
+            app:argType="com.shuffl.niched.model.Product" />
+    </fragment>
+</navigation>
